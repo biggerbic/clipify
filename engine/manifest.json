@@ -1,0 +1,9 @@
+{
+  "openshorts": {
+    "repo": "mutonby/openshorts",
+    "commit": "8af4a48a2bdda96c9a02bb8df3f09d4e7ec99e0f"
+  },
+  "uv": "0.13.8",
+  "python": "3.11",
+  "torch": { "torch": "2.11.0", "torchvision": "0.26.0" }
+}

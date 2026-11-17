@@ -1,0 +1,14 @@
+[
+  {
+    "file": "app.py",
+    "find": "        preexec_fn=_lower_priority,\n",
+    "replace": "        preexec_fn=None if os.name == 'nt' else _lower_priority,\n",
+    "why": "subprocess preexec_fn is not supported on Windows (job priority is simply left as is there)."
+  },
+  {
+    "file": "main.py",
+    "find": "        import resource\n        own = resource.getrusage(resource.RUSAGE_SELF)\n",
+    "replace": "        if os.name == 'nt':\n            return\n        import resource\n        own = resource.getrusage(resource.RUSAGE_SELF)\n",
+    "why": "The resource module only exists on Linux/macOS; on Windows the per-job CPU report is skipped."
+  }
+]

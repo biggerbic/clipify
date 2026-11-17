@@ -1,0 +1,18 @@
+Clipify
+Copyright (C) 2026 Clipify contributors
+Licensed under the GNU Affero General Public License v3.0 (see LICENSE).
+
+This product includes or adapts work from:
+
+Postiz — https://github.com/gitroomhq/postiz-app (AGPL-3.0)
+  src/main/publish/youtube/provider.ts and src/main/publish/instagram/provider.ts are adapted from
+  libraries/nestjs-libraries/src/integrations/social/{youtube,instagram}.provider.ts at commit 4823080b.
+
+OpenShorts — https://github.com/mutonby/openshorts (MIT; its cloud/ directory is not used)
+  Downloaded and run unmodified at the commit pinned in engine/manifest.json, except the small Windows
+  compatibility patches in engine/patches/windows.json.
+
+FFmpeg (via ffmpeg-static / ffprobe-static) — LGPL/GPL builds, see their packages.
+
+Background photos are served by the Unsplash API (https://unsplash.com/?utm_source=clipify&utm_medium=referral)
+and attributed to their photographers in the app.
